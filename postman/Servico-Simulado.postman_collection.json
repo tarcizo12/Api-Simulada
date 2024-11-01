@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "784924ea-0b1c-44b7-a1bf-1a765ef7dc92",
+		"name": "Servico-Simulado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28723467"
+	},
+	"item": [
+		{
+			"name": "Testar requisição serviço online",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/"
+			},
+			"response": []
+		}
+	]
+}

@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "784924ea-0b1c-44b7-a1bf-1a765ef7dc92",
 		"name": "Servico-Simulado",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "28723467"
 	},
 	"item": [
@@ -11,7 +11,36 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:3000/"
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mudar estado da aplicacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
 			},
 			"response": []
 		}

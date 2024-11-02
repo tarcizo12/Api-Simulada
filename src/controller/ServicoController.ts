@@ -2,7 +2,7 @@ import {StateServico} from "../constants/StateServico";
 
 export default class ServicoController{
     private estadoAtualDaAplicacao: StateServico = StateServico.NORMAL
-    private readonly TEMPO_DELAY_EM_SEGUNDOS_DEFAULT = 30 // Segundos
+    private readonly TEMPO_DELAY_EM_SEGUNDOS_DEFAULT = 120 // Segundos
 
 
     private momentoAtual = (): Date => {

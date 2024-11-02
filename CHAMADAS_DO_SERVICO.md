@@ -13,7 +13,7 @@ Retorna a hora do dia em que foi solicitada a requisição no serviço.
 **Exemplo de Resposta:**
 ```json
 {
-  "hora": "14:30:15"
+  "HORA_INCIAL_DA_REQUISICAO": "21:08:26"
 }
 ```
 

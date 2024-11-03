@@ -2,12 +2,14 @@ import {StateServico} from "../constants/StateServico";
 
 export default class ServicoController{
     private estadoAtualDaAplicacao: StateServico = StateServico.NORMAL
-    private readonly TEMPO_DELAY_EM_SEGUNDOS_DEFAULT = 120 // Segundos
+    private TEMPO_DELAY_EM_SEGUNDOS_DEFAULT = 120 // Segundos
 
 
     private momentoAtual = (): Date => {
         return new Date();
     };
+
+    public setTempoEmSegundos = (segundos: number ) => {this.TEMPO_DELAY_EM_SEGUNDOS_DEFAULT = segundos}
 
     private handleRetornoSemDelay = (): Date =>{
         console.log(`Aplicação esta retornando em estado de: ${this.estadoAtualDaAplicacao}`)

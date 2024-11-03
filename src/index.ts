@@ -30,7 +30,14 @@ app.get('/mudarEstado', (req: Request, res: Response) => {
   if(novoEstado != undefined){
     servicoController.setNovoEstadoDaAplicacao(novoEstado)
   }
+
   res.send(`Alterado para o estado: ${getEnumNameByValue(novoEstado)}`);
+});
+
+app.get('/alterarDelay', (req: Request, res: Response) => {
+  const tempoEmSegundos: number = Number(req.query.segundos); 
+  servicoController.setTempoEmSegundos(tempoEmSegundos)
+  res.send(`Tempo de delay definido em: ${tempoEmSegundos}s`);
 });
 
 

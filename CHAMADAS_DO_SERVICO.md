@@ -32,15 +32,31 @@ Retorna a hora do dia em que foi solicitada a requisição no serviço.
 
 **Exemplo de Uso:**
 ```plaintext
-http://localhost:3000/mudarEstado?code=2
+  http://localhost:3000/mudarEstado?code=2
 ```
 
 **Exemplo de Resposta:**
-```json
-{
-  "status": "sucesso",
-  "mensagem": "Estado alterado com sucesso."
-}
+```string
+  Alterado para o estado: DELAY
+```
+
+### 3. Mudar o tempo de delay em segundos da aplicação
+
+**Método:** `GET`  
+**Endpoint:** `http://localhost:3000/alterarDelay?segundos={s}`
+
+**Parâmetros:**
+
+- **segundos**: Inteiro que determina o tempo de delay em segundos.
+
+**Exemplo de Uso:**
+```plaintext
+  http://localhost:3000/alterarDelay?segundos=10
+```
+
+**Exemplo de Resposta:**
+```string
+  Tempo de delay definido em: 10s
 ```
 
 ---

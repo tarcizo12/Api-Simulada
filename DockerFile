@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm i --save-dev @types/serve-static
+RUN npm i --save-dev @types/cors
 
 COPY . .
 

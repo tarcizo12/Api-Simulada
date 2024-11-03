@@ -1,9 +1,12 @@
 import express, { Request, Response } from 'express';
 import ServicoController from './controller/ServicoController';
 import {getStateByValue, StateServico, getEnumNameByValue} from '../src/constants/StateServico'
+import cors from 'cors';
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors()); 
 
 const servicoController: ServicoController = new ServicoController
 
